@@ -9,3 +9,7 @@
 <ul>
   <li>~</li>
 </ul>
+<h2>Project</h2>
+<ul>
+  <li>2022.02.16 - 2022.02.20 Fruit on a Dead Tree 전시회 페이지 개발</li>
+</ul>
