@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="down.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="down.js"></script>
+	<title>남아서 부재하는 것들</title>
+</head>
+<body onload="table_size()">
+	<div class="popup" style="display: none;"> 
+		<div class="close close1" onclick="popup_close()"></div>
+		<a href="#" class="down_button" download><img src="image/down.png"></a>
+	</div>
+	<div class="back" style="display: none;"></div>
+	
+	<div class="main">
+		<div class="circle" onclick="go_main()"></div>
+		<div class="text_div">
+			<u><p class="text1" style="font-weight: bold;">
+				그러니까 남아서 사라지지 않는 것들을<br/>
+				분해해요. 당신은 여기 없어서 사라지지<br/>
+				않는다고. 그랬죠, 나는 그것을 조작합니다.<br/>
+				여기도 저기도 아닌, 그러니까 시간의<br/>
+				뒤틀림 속에 살면서.<br/>
+				하루빨리 평범해지기를 작고 작아 작은<br/>
+				입자로 사라지는 것처럼 그렇게.<br/>
+			</p></u>
+		</div>
+		<center>
+			<div class="text2">
+			</div>
+			<div>
+				<table border="1" >
+					<tr>
+						<td class="dis" onclick="down(0)"></td><td class="dis" onclick="down(1)"></td><td class="dis" onclick="down(2)"></td>
+					</tr>
+					<tr>
+						<td class="dis" onclick="down(3)"></td><td class="dis" onclick="down(4)"></td><td class="dis" onclick="down(5)"></td>
+					</tr>
+					<tr>
+						<td class="dis" onclick="down(6)"></td><td class="dis" onclick="down(7)"></td><td class="dis" onclick="down(8)"></td>
+					</tr>
+					<tr>
+						<td class="dis" onclick="down(9)"></td><td class="dis" onclick="down(10)"></td><td class="dis" onclick="down(11)"></td>
+					</tr>
+				</table>
+			</div>
+		</center>
+	</div>
+	<center>
+	<div class="file">0</div>
+</body>
+</html>

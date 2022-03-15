@@ -1,0 +1,18 @@
+@font-face {
+  font-family: 'AdobeMyungjoStd-Medium-Alphabetic';
+  src: url('AdobeMyungjoStd-Medium-Alphabetic.svg#AdobeMyungjoStd-Medium-Alphabetic') format('svg'),
+       url('AdobeMyungjoStd-Medium-Alphabetic.ttf') format('truetype'),
+       url('AdobeMyungjoStd-Medium-Alphabetic.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'adobe-std-m';
+  src: url('adobe-std-m.eot');
+  src: url('adobe-std-m.eot?#iefix') format('embedded-opentype'),
+       url('adobe-std-m.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+

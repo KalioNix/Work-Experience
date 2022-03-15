@@ -1,0 +1,92 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	vertical-align: baseline;
+	font-family: "AdobeMyungjoStd-Medium-Alphabetic";
+}
+body {
+	background-color: #ffffff;
+}
+
+.loading{
+	min-height: 100vh;
+	background-image: url(image/loading.png);
+    background-repeat : no-repeat;
+    background-size : contain;
+    background-position: center;
+	position: relative;
+}
+
+.main{
+	min-height:100vh;
+	background-image: url(image/main.png);
+    background-repeat : no-repeat;
+    background-size : contain;
+    background-position: center;
+	postiion : relative;
+	display: none;
+}
+
+.cookie{
+	height: 5%;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	display: none;
+}
+
+.load{
+	animation: loading;
+	animation-duration: 3s;
+}
+
+.appear{
+	animation: loading;
+	animation-duration:1.5s;
+}
+.appear2{
+	animation: loading;
+	animation-duration:2.5s;
+}
+
+.rotate{
+	animation: rotation;
+	animation-duration:3s;
+}
+
+.disappear{
+	animation: disappearing;
+	animation-duration:1s;
+}
+
+@keyframes loading{
+	from{
+		opacity:0;
+	}
+	to{
+		opacity:1;
+	}
+}
+
+@keyframes disappearing{
+	from{
+		opacity: 1;
+	}
+	to{
+		opacity: 0;
+	}
+}
+
+@keyframes rotation{
+    from{
+    	transform: rotate(0deg);
+    	opacity:1;
+    }
+    to{
+    	transform: rotate(720deg);
+    	opacity:0;
+    }
+}
+

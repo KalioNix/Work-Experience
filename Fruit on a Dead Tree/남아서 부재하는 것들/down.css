@@ -1,0 +1,216 @@
+@font-face {
+    font-family: 'Chosunilbo_myungjo';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Chosunilbo_myungjo.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+body{
+	position: relative;
+	opacity: 0;
+}
+
+.main{
+	position: absolute;
+	margin: 5vw;
+	left: 0px;
+	right: 0px;
+}
+
+
+.text1{
+	font-size: 3vw;
+	font-family: "Chosunilbo_myungjo";
+}
+
+.text2{
+	display: inline-block;
+	background-image: url(image/text2.png);
+	background-repeat : no-repeat;
+	background-size : contain;
+	background-position: center;
+	width: 44vw;
+	height: 18vw;
+	margin-bottom: -2vh;
+}
+
+table{
+	margin-top: 3vh;
+	width: 85vw;
+}
+
+td{
+	background-image: url(image/box.png);
+	background-repeat : no-repeat;
+	background-size : contain;
+	background-position: center;
+}
+center{
+	position: relative;
+	opacity: 0.2;
+}
+
+.file{
+	opacity: 0;
+	z-index: -10;
+	display: hidden;
+}
+
+.back{
+	position: absolute;
+	width: 100vw;
+	height: 100vh;
+	background-color: black;
+	z-index: 10;
+	opacity: 0.2;
+}
+
+.popup{
+	position: absolute;
+	width: 90vw;
+	height: 90vw;
+	background-color: white;
+	z-index: 11;
+	opacity: 1;
+	box-shadow: 0 0 5vw rgba(0, 0, 0, 0.5);
+	top: 0px;
+	left: 0px;
+	background-repeat : no-repeat;
+    background-size : contain;
+    background-position: center;
+}
+
+.popup img{
+	position: absolute;
+	width:8vw;
+	height:8vw;
+	bottom: 0px;
+	right: 0px;
+	margin: 3vw;
+}
+
+.text_div{
+	position: absolute;
+	top: 40vh;
+	right: 8%;
+	z-index: 1;
+	line-height:110%;
+}
+
+.circle{
+	position: absolute;
+	width: 5vw;
+	height: 5vw;
+	border-radius: 50%;
+	background-color: #ffa1aa;
+	top: 40vh;
+	right: 4%;
+	border: 1px solid;
+	z-index: 1;
+}
+
+.main_load{
+	animation: appearing;
+	animation-duration:2s;
+	opacity: 1;
+}
+
+.disappear{
+	animation: disappearing;
+	animation-duration:1.5s;
+	opacity: 0;
+}
+
+.disappear2{
+	animation: disappearing;
+	animation-duration:1s;
+	opacity: 0;
+}
+
+.appear{
+	animation: appearing;
+	animation-duration:1s;
+	opacity: 1;
+}
+
+.appear2{
+	animation: appearing2;
+	animation-duration:5s;
+	opacity: 1;
+}
+
+.popup_loading{
+	animation: appearing2;
+	animation-duration:1s;
+	opacity: 1;
+}
+
+.load{
+	animation: main_loading;
+	animation-duration: 2s;
+	opacity: 1;
+}
+
+.close {
+	position:absolute;
+	float:left;
+	display:inline-block;
+	*display:inline;
+	width:13vw;
+	height:13vw;
+	top: 0px;
+	right: 0px;
+	text-align:center;
+}
+
+.close1:after {
+	content: "\00d7";
+	font-size:12vw;
+	line-height:12vw;
+}
+
+
+
+@keyframes main_loading{
+	from{
+		opacity:0;
+	}
+	to{
+		opacity:1;
+	}
+}
+
+@keyframes appearing{
+	from{
+		opacity:0.2;
+	}
+	to{
+		opacity:1;
+	}
+}
+@keyframes appearing2{
+	from{
+		opacity:0;
+	}
+	to{
+		opacity:1;
+	}
+}
+
+@keyframes disappearing{
+	from{
+		opacity: 1;
+	}
+	to{
+		opacity: 0;
+	}
+}
+
