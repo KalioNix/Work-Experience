@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<script src="jquery-3.6.0.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<script type="text/javascript" src="main.js"></script>
+	<title>가내분실</title>
+</head>
+<body onload="start()">
+	<div class="popup" style="display: none;">
+		<div class="close close1" onclick="popup_close()"></div>
+	</div>
+	<div class="back" style="display: none;"></div>
+
+
+	<table class="vertical">
+		<tr>
+			<td onclick="popup(8)"></td><td></td><td onclick="popup('A')"></td><td class="center"></td><td></td><td onclick="popup('C')"></td>
+		</tr>
+		<tr>
+			<td></td><td></td><td onclick="popup(3)"></td><td onclick="popup('B')"></td><td></td><td></td>
+		</tr>
+		<tr>
+			<td></td><td onclick="popup(6)"></td><td onclick="popup(9)"></td><td onclick="popup(7)"></td><td onclick="popup(2)"></td><td></td>
+		</tr>
+		<tr>
+			<td></td><td onclick="popup(10)"></td><td></td><td onclick="popup(12)"></td><td></td><td></td>
+		</tr>
+		<tr>
+			<td></td><td onclick="popup(1)"></td><td onclick="popup(4)"></td><td onclick="popup(11)"></td><td onclick="popup(5)"></td><td></td>
+		</tr>
+		<tr>
+			<td></td><td></td><td></td><td></td><td></td><td></td>
+		</tr>
+	</table>
+</body>
+</html>
